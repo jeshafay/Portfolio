@@ -4,115 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Jannisha Fay Santanu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table width="100%">
-        <tr>
-            <td> <h3 id= Home>PORTFOLIO</h3> </td>
-            <td align="right">
-                <div>
-                    <a href="#Home">Home | </a>
-                    <a href="#About">About | </a>
-                    <a href="#Projects"> Projects | </a>
-                    <a href="#Contact"> Contact</a>
-                </div>
-            </td>
-        </tr>
-    </table>
-    <br><br>
-    <table width="100%">
-        <tr>
-            <td align="center">
-            <img src="Res\foto profil.jpg" style="width: 150px; height: 170px; border-radius: 0%; object-fit: cover;">
-            </td>
-        </tr>
 
-        <tr>
-            <td align="center">
-                <h3>Jannisha Fay Santanu</h3>
-                <p>Informatics | Undergraduate</p>
-            </td>
-        </tr>
-    </table>
-    <br><br>
-
-        <h2 id = About>About Me</h2>
-            <p>Mahasiswa Informatika di Universitas Pelita Harapan yang berfokus pada pengembangan perangkat lunak, algoritma, dan desain game. Berpengalaman menggunakan bahasa pemrograman seperti Java, Kotlin, dan Python dalam membangun aplikasi, serta mengembangkan game interaktif berbasis Godot dan Unity.</p>
-            <br><br>
-        
-        
-        <h2 id = Services>Services</h2>
-        <table width="100%" cellspacing ="0" cellpadding = "12" border="0">
-            <tr align="center">
-                <!-- text -->
-                <td width="30%" valign="top">
-                    <h1 align="left">An Overview of What I Can Do For You</h1>
-                    <p align="left">Scope of practice and the kinds of projects I take part in and can help you with.</p>
-                </td>
-
-                <!-- table -->
-                <td>
-                    <table border="1" cellspacing="10" cellpadding="20" width="50%">
-                        <tr>
-                            <td>
-                                <h3>Software Development</h3>
-                                <br>
-                                Membuat aplikasi berbasis Java, Kotlin, dan Python.
-
-                            </td>
-                            <td>
-                                <h3>Game Development</h3>
-                                <br>
-                                Merancang dan mengembangkan game sesuai tujuan proyek
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Web Designn</h3>
-                                <br>
-                                Mengimplementasikan situs web fungsional yang fokus pada performa serta pengalaman pengguna
-                            </td>
-                            <td>
-                                <h3>UI/UX</h3>
-                                <br>
-                                Mendesain antarmuka yang intuitif dan estetik untuk aplikasi dan game
-                            </td>
-                        </tr>
-                    </table>
+    <div id="top-section">
+        <table width="100%"> <!-- ganti flexbox -->
+            <tr>
+                <td align="left"> <h3 id= Home>PORTFOLIO</h3> </td>
+                <td align="right">
+                    <div>  
+                        <a href="#Home">Home | </a>
+                        <a href="#About">About | </a>
+                        <a href="#Projects"> Projects | </a>
+                        <a href="#Contact"> Contact</a>
+                    </div>
                 </td>
             </tr>
         </table>
         <br><br>
 
+        <div class="intro">
+            <div class="intro-text">
+                <h1>Jannisha Fay Santanu</h1>
+                <p>Informatics | Undergraduate</p>
+            </div>
+            <div class="intro-photo">
+                <img src="Res/foto profil.jpg" style="width:210px; height: 230px; border-radius: 0%; object-fit: cover;">
+            </div>
+        </div>
 
+    </div>
+
+
+    <div id="about-wrapper">
+        <div id="about-section">
+            <h2 id = "About">About Me</h2>
+            <p>Mahasiswa Informatika di Universitas Pelita Harapan yang berfokus pada pengembangan perangkat lunak, algoritma, dan desain game. Berpengalaman menggunakan bahasa pemrograman seperti Java, Kotlin, dan Python dalam membangun aplikasi, serta mengembangkan game interaktif berbasis Godot dan Unity.</p>
+            <br><br>
+        </div>
+    </div>
+        
+    <div id="services-section">
+        <h2 id = Services>Services</h2>
+        <div class="services-section">
+            <div id="space-text">
+                ----------------------------- <!-- temp -->
+            </div>
+            <div class="services-text">
+                <h1>An Overview of What I Can Do For You</h1>
+                <p>Scope of practice and the kinds of projects I take part in and can help you with.</p>
+            </div>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <h3>Software Development</h3>
+                    <br>
+                    Membuat aplikasi berbasis Java, Kotlin, dan Python.
+                </div>
+                <div class="services-box">
+                    <h3>Game Development</h3>
+                    <br>
+                    Merancang dan mengembangkan game sesuai tujuan proyek
+                </div>
+                <div class="services-box">
+                    <h3>Web Designn</h3>
+                    <br>
+                    Mengimplementasikan situs web fungsional yang fokus pada performa serta pengalaman pengguna
+                </div>
+                <div class="services-box">
+                    <h3>UI/UX</h3>
+                    <br>
+                    Mendesain antarmuka yang intuitif dan estetik untuk aplikasi dan game
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    <br><br>
+
+    <div id="projects-section">
+        <br>
         <h2 id = Projects>Projects</h2>
-            <table width="100%" border="0" cellspacing = "0" cellpadding = "12">
-                <tr align="center">
-                    <td>
-                        <img src="Res\Whispering Waters.jpg" alt="Profile Photo" width="230"> <br><br>
-                        <a href="https://github.com/asvigamestudio/WhisperingWaters">Whispering Waters</a> <br><br>
-                        Game edukasi mancing berbasis Unity yang mengusung tema konservasi laut sesuai SDG 14 (<i>Life Below Water</i>).
-                    </td>
-                    <td align="bottom">
-                        <img src="Res\Dijkstra.jpg" alt="Profile Photo" width="230"> <br><br>
-                        <a href="https://github.com/Expellar/Final-Project-DAA">Improved Dijkstra Algorithm</a> <br><br>
-                        Implementasi C++ algoritma Dijkstra yang ditingkatkan untuk perencanaan jalur robot mobile dan penghindaran rintangan dengan visualisasi CoppeliaSim.
-                    </td>
-                    <td>
-                        <img src="Res\Key To Hatch.jpg" alt="Profile Photo" width="230"> <br><br>
-                        <a href="https://github.com/gggrc/KeyToHatch">Key To Hatch</a> <br><br>
-                        Game edukasi berbasis Java yang melatih kecepatan dan ketepatan mengetik melalui tantangan interaktif.
-                    </td>
-                </tr>
-            <table>
+        <div class="projects-container">
+                <div class="project-card">
+                    <img src="Res/Exercise Flexbox.jpg" alt="Flexbox Project" width="220">
+                    <a href="https://jeshafay.github.io/exercise-flexbox/">Flexbox Pricing Table</a>
+                    <p>Exercise menggunakan <i>Flexbox</i> dan <i>media query</i>.</p>
+                </div>
 
-        <hr>
-        <h2 id = Contact>Contact</h2>
-            <a href="">LinkedIn</a> <br>
-            <a href="https://github.com/jeshafay">GitHub</a> <br>
-            <a href="mailto:jeshafay@gmail.com">Email: 01082230010@student.uph.edu</a>
+                <div class="project-card">
+                    <img src="Res/Dijkstra.jpg" alt="Dijkstra Project" width="230">
+                    <a href="https://github.com/Expellar/Final-Project-DAA">Improved Dijkstra Algorithm</a>
+                    <p>Implementasi C++ algoritma Dijkstra yang ditingkatkan untuk perencanaan jalur robot mobile dan penghindaran rintangan dengan visualisasi CoppeliaSim.</p>
+                </div>
 
-        <hr>
-        <p align="center">© 2025 Jannisha Fay</p>
+                <div class="project-card">
+                    <img src="Res/Key To Hatch.jpg" alt="Key To Hatch Project" width="230">
+                    <a href="https://github.com/gggrc/KeyToHatch">Key To Hatch</a>
+                    <p>Game edukasi berbasis Java yang melatih kecepatan dan ketepatan mengetik melalui tantangan interaktif.</p>
+                </div>
+            </div><br><br><br>
+    </div>
+
+        <div id="bottom-section">
+            <h1 id = Contact>Contact</h1>
+            <div class="contact-link">
+                
+                <a href="">LinkedIn</a>
+                <a href="https://github.com/jeshafay">GitHub</a>
+                <a href="mailto:jeshafay@gmail.com">Email: 01082230010@student.uph.edu</a>
+            </div>
+            <hr>
+            <p align="center">© 2025 Jannisha Fay</p>
+        </div>
 </body>
 </html>
