@@ -92,7 +92,7 @@ h1, h2, h3 {
 }
 
 .nav-bar a {
-    color: #d3d4da; 
+    color: #d8d8dd; 
     background: #3c3d46;  
     padding-top: 8px;
     padding-bottom: 8px;
@@ -127,17 +127,17 @@ h1, h2, h3 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     text-align: left;
-    padding-left: 90px;
+    padding-left: 110px;
 }
 
 #top-section p {
     text-align: left;
-    padding-left: 90px;
+    padding-left: 110px;
 }
 
 /* style="width:310px; height: 330px; border-radius: 0%; object-fit: cover;" */
 .intro-photo img {
-    margin-right: 100px;
+    margin-right: 180px;
     max-width: 200px;
     height: auto;
     border-radius: 4%;
@@ -148,7 +148,7 @@ h1, h2, h3 {
 ========================= */
 #about-wrapper {
     margin-top: 0;
-    background-color: #eeeeee8d;
+    background-color: #eeeeee8b;
     width: 100%;
     padding: 40px 0;
     margin-bottom: 32px;
@@ -160,30 +160,38 @@ h1, h2, h3 {
     text-align: justify;
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-left: 222px;
+    color: #404147;
 }
 
 /* =========================
    SERVICES SECTION
 ========================= */
-#services-section h2 {
-
-}
 
 .services-section {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin: 50px 20px;
+    margin: 70px 20px;
     gap: 40px;
+    
 }
 
 .services-text {
     flex: 1;
     max-width: 400px;
     text-align: left;
+    margin-top: 20px;
 }
 
-.services-container {
+.services-title-text {
+    line-height: 45px;
+}
+.services-description-text {
+    line-height: 25px;
+    color: #99999f;
+}
+.services-box-container {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
@@ -191,10 +199,16 @@ h1, h2, h3 {
     justify-content: center;
 }
 
+#services-section .section-title {
+    margin-left: 0;
+    margin-bottom: 27px;
+    align-self: flex-start;
+}
+
 .services-box {
     width: 250px;
     height: 200px;  
-    background: #f9f8f8;
+    background: #f9f8f8d1;
     padding: 15px;
     border-radius: 8px;
     border: 1px solid #d6d6d6;
@@ -203,28 +217,74 @@ h1, h2, h3 {
     flex-direction: column;
     justify-content: flex-start;
     word-wrap: break-word;
+    position: relative;
 }
-
+/* 
 .services-box:hover {
     background: #23242a;
     color: white;
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.079);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.182);
     transition: 0.2s;
+} */
+
+.services-box:hover {
+  background: 
+    linear-gradient(rgba(15, 15, 15, 0.038), rgba(24, 24, 25, 0.233)),
+    url("Res/services_bg.png") no-repeat center center / cover;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.182);
+  transition: 0.3s;
 }
 
+
+.services-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    /* max-width: 80%; */
+}
+
+.short-line {
+  width: 72px;       
+  border: none;       
+  border-top: 2px solid #9c9ca4;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 0;  
+}
+
+.short-line:hover {     
+  border-top: 1.5px solid #f9f9fc;
+}
+
+.arrow{
+    /* color: #1e1f24; */
+    position: absolute;
+    bottom: 12px;
+    right: 25px; 
+    text-decoration: none;
+    font-size: 30px;
+   
+}
+
+.services-box .arrow:hover {
+    /* color: #ffffff; */
+    transform: translateX(4px);
+    transition: 0.3s;
+}
 /* =========================
    PROJECTS SECTION
 ========================= */
 #projects-section {
-    background-color: #eeeeee8d;
+    background-color: #eeeeeeb7;
 }
-
 
 .projects-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     max-width: 80%;
     gap: 20px;
     flex-wrap: wrap;
@@ -239,10 +299,11 @@ h1, h2, h3 {
     align-items: center;
     width: 300px;
     text-align: center;
-    background-color: #eeeeee2d;
-    border: 2px solid #e1e1e1;
-    border-radius: 10px;
+    background-color: #ffffff3c;
+    border: 1px solid #68686e47;
+    border-radius: 7px;
     padding: 15px;
+    gap: 15px;
     box-sizing: border-box;
 }
 
@@ -262,9 +323,9 @@ h1, h2, h3 {
     text-decoration: underline;
 }
 
-.project-card p {
+.project-description {
     font-size: 14px;
-    text-align: center;
+    text-align: left;
 }
 
 /* =========================
@@ -292,7 +353,7 @@ h1, h2, h3 {
     padding: 0;
     margin: 0 0 0px;
     align-items: left;
-    font-family: "Sono", monospace;
+    font-family: Arial, sans-serif;
     margin-bottom: 40px;
     margin-top: 10px;
     gap: 5px;
