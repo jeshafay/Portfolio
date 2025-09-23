@@ -73,7 +73,7 @@ h1, h2, h3 {
 #top-section hr {
     border: none;
     height: 1px;
-    background-color: #cfd0d6e4;
+    background-color: #cfd0d6c5;
     margin: 20px 0;
 }
 
@@ -110,7 +110,7 @@ h1, h2, h3 {
     margin-right: 100px;
     max-width: 200px;
     height: auto;
-    border-radius: 2%;
+    border-radius: 4%;
 }
 
 /* =========================
@@ -237,9 +237,30 @@ h1, h2, h3 {
 ========================= */
 #bottom-section {
     background: #1e1f24; 
-    color: rgb(118, 118, 122);
+    color: rgb(163, 163, 168);
     padding: 40px 20px;
     width: 100%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.contact-links {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0px;
+    align-items: left;
+    font-family: "Sono", monospace;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    gap: 5px;
 }
 
 #bottom-section h1 {
@@ -248,7 +269,7 @@ h1, h2, h3 {
 }
 
 #bottom-section a {
-    color: rgb(118, 118, 122);
+    color: rgb(115, 115, 121);
     text-decoration: none;
 }
 
@@ -257,20 +278,6 @@ h1, h2, h3 {
     height: 2px;
     background-color: rgb(47, 47, 49);
     margin: 20px 0;
-}
-
-.contact-link {
-    display: flex;
-    gap: 90px;
-    flex-wrap: wrap; 
-    margin-bottom: 50px;
-    align-items: baseline;
-    justify-content: center;
-}
-
-.contact-link a {
-    color: rgb(128, 128, 133);
-    text-decoration: none;
 }
 
 #space-text {
