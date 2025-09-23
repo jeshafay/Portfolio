@@ -8,20 +8,18 @@
 </head>
 <body>
 
+    <!-- TOP SECTION -->
     <div id="top-section">
-        <table width="100%"> <!-- ganti flexbox -->
-            <tr>
-                <td align="left"> <h3 id= Home>PORTFOLIO</h3> </td>
-                <td align="right">
-                    <div>  
-                        <a href="#Home">Home | </a>
-                        <a href="#About">About | </a>
-                        <a href="#Projects"> Projects | </a>
-                        <a href="#Contact"> Contact</a>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        <div class="header">
+            <h2>PORTOFOLIO</h2>
+            <div class="nav-bar">
+                <a href="#Home">Home </a>
+                <a href="#About">About </a>
+                <a href="#Projects"> Projects </a>
+                <a href="#Contact"> Contact </a>
+            </div> 
+        </div>
+        <hr>
         <br><br>
 
         <div class="intro">
@@ -30,26 +28,27 @@
                 <p>Informatics | Undergraduate</p>
             </div>
             <div class="intro-photo">
-                <img src="Res/foto profil.jpg" style="width:210px; height: 230px; border-radius: 0%; object-fit: cover;">
+                <img src="Res/foto profil.jpg">
             </div>
         </div>
 
     </div>
 
-
+    <!-- ABOUT SECTION -->
     <div id="about-wrapper">
         <div id="about-section">
-            <h2 id = "About">About Me</h2>
+            <h3 id = "section-title">About Me</h3>
             <p>Mahasiswa Informatika di Universitas Pelita Harapan yang berfokus pada pengembangan perangkat lunak, algoritma, dan desain game. Berpengalaman menggunakan bahasa pemrograman seperti Java, Kotlin, dan Python dalam membangun aplikasi, serta mengembangkan game interaktif berbasis Godot dan Unity.</p>
             <br><br>
         </div>
     </div>
         
+    <!-- SERVICES SECTION -->
     <div id="services-section">
-        <h2 id = Services>Services</h2>
+        <h3 id = "section-title">Services</h3>
         <div class="services-section">
             <div id="space-text">
-                ----------------------------- <!-- temp -->
+                -----------------------------
             </div>
             <div class="services-text">
                 <h1>An Overview of What I Can Do For You</h1>
@@ -79,23 +78,23 @@
                 </div>
             </div>
         </div>
-    </div>
-            
+    </div>  
     <br><br>
 
+    <!-- PROJECTS SECTION -->
     <div id="projects-section">
         <br>
-        <h2 id = Projects>Projects</h2>
+        <h3 id = "section-title">Projects</h3>
         <div class="projects-container">
                 <div class="project-card">
-                    <img src="Res/Exercise Flexbox.jpg" alt="Flexbox Project" width="220">
-                    <a href="https://jeshafay.github.io/exercise-flexbox/">Flexbox Pricing Table</a>
-                    <p>Exercise menggunakan <i>Flexbox</i> dan <i>media query</i>.</p>
+                    <img src="Res/Exercise Flexbox.jpg" alt="Project 1" width="220">
+                    <a href="https://jeshafay.github.io/exercise-flexbox/">Project 1</a>
+                    <p>Exercise menggunakan <i>Flexbox</i>.</p>
                 </div>
 
                 <div class="project-card">
-                    <img src="Res/Dijkstra.jpg" alt="Dijkstra Project" width="230">
-                    <a href="https://github.com/Expellar/Final-Project-DAA">Improved Dijkstra Algorithm</a>
+                    <img src="Res\dice.jpg" alt="Project 2" width="230">
+                    <a href="https://jeshafay.github.io/dice/">Project 2</a>
                     <p>Implementasi C++ algoritma Dijkstra yang ditingkatkan untuk perencanaan jalur robot mobile dan penghindaran rintangan dengan visualisasi CoppeliaSim.</p>
                 </div>
 
